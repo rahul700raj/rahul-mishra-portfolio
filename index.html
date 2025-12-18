@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Mishra - Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Rahul<span>Mishra</span></h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link login-btn" onclick="openModal('loginModal')">Login</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="animate-text">Hi, I'm <span>Rahul Mishra</span></h1>
+                <h2 class="typing-text">Full Stack Developer</h2>
+                <p>Passionate about creating innovative web solutions and bringing ideas to life through code.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:rm2778643@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/rahul700raj" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=500&h=500&fit=crop" alt="Rahul Mishra - Coding">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=400&h=400&fit=crop" alt="Rahul Mishra">
+                </div>
+                <div class="about-text">
+                    <h3>Full Stack Developer & Problem Solver</h3>
+                    <p>I'm a passionate developer with expertise in building modern web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="https://sssssmkmkd.netlify.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Main Portfolio Project</h3>
+                        <p>A comprehensive web application showcasing modern design and functionality.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="https://sssssmkmkd.netlify.app" target="_blank" class="btn btn-small">View Live</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-featured online shopping platform with payment integration.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="#" class="btn btn-small">View Live</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management tool with real-time updates.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <a href="#" class="btn btn-small">View Live</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop" alt="Project 4">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather tracking application with beautiful UI.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>API</span>
+                            <span>CSS3</span>
+                        </div>
+                        <a href="#" class="btn btn-small">View Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">Courses & Certifications</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full Stack Web Development</h3>
+                    <p>Comprehensive bootcamp covering MERN stack development</p>
+                    <span class="course-provider">Udemy</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>Advanced React & Redux</h3>
+                    <p>Deep dive into React ecosystem and state management</p>
+                    <span class="course-provider">Coursera</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Design & SQL</h3>
+                    <p>Mastering relational and NoSQL databases</p>
+                    <span class="course-provider">edX</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                    <p>Creating mobile-first, responsive websites</p>
+                    <span class="course-provider">freeCodeCamp</span>
+                </div>
+            </div>
+
+            <div class="specializations">
+                <h3>Specializations</h3>
+                <div class="spec-list">
+                    <div class="spec-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Frontend Development (React, Vue, Angular)</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Backend Development (Node.js, Express, Python)</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Database Management (MongoDB, PostgreSQL, MySQL)</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cloud Services (AWS, Azure, Google Cloud)</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>DevOps & CI/CD (Docker, Kubernetes, Jenkins)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Hackathon Winner</h3>
+                    <p>First place in National Web Development Hackathon 2024</p>
+                    <span class="achievement-date">March 2024</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Best Project Award</h3>
+                    <p>Recognized for innovative e-commerce solution at Tech Summit</p>
+                    <span class="achievement-date">January 2024</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Open Source Contributor</h3>
+                    <p>500+ contributions to major open source projects</p>
+                    <span class="achievement-date">2023-2024</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>AWS Certified Developer</h3>
+                    <p>Amazon Web Services Developer Associate Certification</p>
+                    <span class="achievement-date">December 2023</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Top Performer</h3>
+                    <p>Ranked in top 5% on LeetCode and HackerRank</p>
+                    <span class="achievement-date">Ongoing</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Leader</h3>
+                    <p>Founded local developer community with 500+ members</p>
+                    <span class="achievement-date">2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:rm2778643@gmail.com">rm2778643@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/rahul700raj" target="_blank">github.com/rahul700raj</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rahul Mishra. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="mailto:rm2778643@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/rahul700raj" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <p class="modal-switch">Don't have an account? <a href="#" onclick="switchModal('loginModal', 'signupModal')">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+                <p class="modal-switch">Already have an account? <a href="#" onclick="switchModal('signupModal', 'loginModal')">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
